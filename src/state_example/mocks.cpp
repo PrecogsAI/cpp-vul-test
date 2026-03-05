@@ -27,6 +27,9 @@ static FuzzedDataProvider *gFDP;
 void SetFDP(FuzzedDataProvider *fuzzed_data_provider) {
   gFDP = fuzzed_data_provider;
 }
+void SetFDP(FuzzedDataProvider *fuzzed_data_provider) {
+  gFDP = fuzzed_data_provider;
+}
 
 FuzzedDataProvider *GetFDP() { return gFDP; }
 
